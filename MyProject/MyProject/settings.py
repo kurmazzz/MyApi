@@ -128,6 +128,8 @@ REST_AUTH_REGISTER_SERIALIZERS = {
         'REGISTER_SERIALIZER': 'MyApi.api.serializer.RegisterSerializer',
 }
 
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'myapi.std-262.ist.mospolytech.ru']
+
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
