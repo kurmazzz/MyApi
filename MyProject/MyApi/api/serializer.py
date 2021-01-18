@@ -39,6 +39,8 @@ class ProjectsSerializer(serializers.ModelSerializer):
 
 
 class EventsSerializer(serializers.ModelSerializer):
+    user = UserSerializer(read_only=True)
+    
     class Meta:
         model = Event
         fields = ['name', 'city', 'user']
